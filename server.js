@@ -5,6 +5,10 @@ var express=require('express'),
 app.use(bodyparser.urlencoded({ extended: false }));
 app.use(express.static('public'));
 
+app.get('/api/todos',(req,res)=>{
+	res.json({1:'test',2:'test2'});
+});
+
 app.get('*',(req,res)=>{
 	res.sendFile('./views/index.html');
 })

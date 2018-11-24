@@ -6,7 +6,7 @@ function mainController($scope,$http){
 	$http.get('/api/todos')
 	.success(function(data){
 		$scope.todos = data;
-		console.log(data);
+		console.log('douze');
 	}).error(function(data){
 		console.log('Erreur : '+data);
 	});
@@ -23,13 +23,13 @@ function mainController($scope,$http){
 		})
 	}
 	$scope.deleteTodo = function(id) {
-	$http.delete('/api/todos/'+id)
-	.success(function(data){
-		$scope.todos=data;
-		console.log(data);
-	})
-	.error(function(data){
-		console.log('Erreur : '+ data);
-	})
-}
+		$http.delete('/api/todos/'+id)
+		.success(function(data){
+			$scope.todos=data;
+			console.log(data);
+		})
+		.error(function(data){
+			console.log('Erreur : '+ data);
+		})
+	}
 }
