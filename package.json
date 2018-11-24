@@ -1,0 +1,25 @@
+{
+  "name": "todoangular",
+  "version": "1.0.0",
+  "description": "Learning the Angular basics with a todo list and Node",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alencruser/TodoAngular.git"
+  },
+  "author": "Alencruser",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alencruser/TodoAngular/issues"
+  },
+  "homepage": "https://github.com/Alencruser/TodoAngular#readme",
+  "dependencies": {
+    "angular": "^1.7.5",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  }
+}
